@@ -14,7 +14,7 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: url(Design\ uden\ navn\ \(2\).png)no-repeat;
+  background: url(assets/Design\ uden\ navn\ \(2\).png)no-repeat;
   background-size: cover;
   background-position: center;
 }
