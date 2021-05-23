@@ -7,27 +7,13 @@
   font-family: "Poppins", sans-serif;
 }
 
-section{
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: url(assets/Design\ uden\ navn\ \(2\).png)no-repeat;
-  background-size: cover;
-  background-position: center;
-}
+
 
 /* NAVIGATINOSBAR START*/
 * {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
 
 .navbar {
   display: flex;
@@ -180,6 +166,24 @@ body {
 }
 /* RESPONSIVE NAVIGATINOSBAR SLUT*/
 
+
+
+
+
+
+
+/* FORSIDE */
+.index--section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url(assets/Design\ uden\ navn\ \(2\).png)no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 /* FYLD TEKST START*/
 .container{
   max-width: 650px;
@@ -262,6 +266,35 @@ body {
   height: auto;
 }
 /* MALER BILLEDET SLUT*/
+
+/* FORSIDE SLUT */
+
+/* KUNSTNER PÅ GULVET */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* KUNSTNER PÅ GULVET SLUT */
 
 
 /*RESPONSIV FYLD TEKST START*/
