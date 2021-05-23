@@ -10,11 +10,6 @@
 
 
 /* NAVIGATINOSBAR START*/
-* {
-  box-sizing: border-box;
-}
-
-
 .navbar {
   display: flex;
   position: relative;
@@ -267,35 +262,6 @@
 }
 /* MALER BILLEDET SLUT*/
 
-/* FORSIDE SLUT */
-
-/* KUNSTNER PÅ GULVET */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* KUNSTNER PÅ GULVET SLUT */
-
 
 /*RESPONSIV FYLD TEKST START*/
 
@@ -333,3 +299,37 @@
 }
 
 /*RESPONSIV FYLD TEKST SLUT*/
+/* FORSIDE SLUT */
+
+
+
+
+
+/* KUNSTNER PÅ GULVET */
+
+.KPG--bagrund{
+  background-image: url(./assets/baggrundsbillede.png);
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* KUNSTNER PÅ GULVET SLUT */
