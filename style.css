@@ -311,21 +311,12 @@
   background-image: url(./assets/baggrundsbillede.png);
 } 
   /* header billede og tekst */
- .KPG--section--header h1{
-  position: absolute;
-  top: 13%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #FFFE99;
-  font-size: 20pt;
-  text-shadow: 1pt 1pt #525132;
-}
 
 .KPG--section--header img{
 width: 100%;
 }
 
+/* sektion med info */
 .KPG--section--info{
 background-color: #fcfcfc;
 box-shadow: 2px 2px 30px #7c7a7a;
@@ -349,7 +340,7 @@ margin: 5%;
   margin:9%;
 }
   
- 
+ /* sektion med kunstnere */
 .KPG--section--vores-kunstnere--overskrift{
   font-size: 20pt;
   margin-left: 5%;
@@ -383,7 +374,140 @@ margin: 5%;
   padding-bottom: 5%;
 }
   
+  /* sektion med ugeoversigt */
+.KPG--section--uge--overskrift{
+  font-size: 20pt;
+  color: #333;
+}
   
+.KPG--section--uge--dag{
+  background-color: #fcfcfc;
+  box-shadow: 2px 2px 30px #7c7a7a;
+
+  margin: 5%;
+}
+
+.KPG--section--uge--dag h1{
+  margin: 5%;
+  padding-top: 5%;
+
+}
+
+
+.KPG--section--uge--dag p{
+  margin: 5%;
+  padding-bottom: 5%;
+}
   
+
+/* responsiv */
+@media (min-width: 860px){
+ 
+  /* header billede og tekst */
+  .KPG--section--header h1{
+    top: 40%;
+    font-size: 50pt;
+  }
+
   
+  /* sektion med info */
+  
+.KPG--section--info{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "title title aside"
+  "text text aside"
+  ;
+background-color: #fcfcfc;
+margin: 5%;
+}
+  
+.KPG--section--info h1{
+  margin-top: 0%;
+  margin-left: 5%;
+  font-size: 30pt;
+  grid-area: title;
+} 
+  
+.KPG--section--info p{
+  margin-left: 5%;
+  font-size: 15pt;
+  grid-area: text;
+}  
+
+.KPG--section--info img{
+  width: 100%;
+  margin-top: 25%;
+  padding-right: 15%;
+  grid-area: aside;
+}
+    
+   /* sektion med kunstnere */
+   .KPG--section--vores-kunstnere{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   grid-template-areas: 
+   "Heading Heading Heading"
+   "K1 K2 K3"
+   "K4 K5 K0"
+   ;
+   }
+
+  .KPG--section--vores-kunstnere--overskrift{
+   grid-area: Heading; 
+  }
+  .k1{
+   grid-area: K1;
+  }
+
+  .k2{
+    grid-area: K2;
+  }
+
+  .k3{
+    grid-area: K3;
+  }
+
+  .k4{
+    grid-area: K4;
+  }
+  .k5{
+   grid-area: K5;
+  }
+
+
+  .KPG--section--vores-kunstnere-Kunstner{
+   margin: 15%;
+  }
+    
+  
+  .KPG--section--vores-kunstnere-Kunstner img{
+  width: 60%;
+  }
+    
+    
+    /* sektion med ugeoversigt */
+  .KPG--section--uge{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "Heading Heading Heading"
+    "D1 D2 D3"
+    "D4 D5 D6"
+    ;
+    margin: 3%;
+  }
+  .KPG--section--uge--overskrift{
+    grid-area: Heading;
+    margin-left: 2%;
+  }
+    
+
+
+}
+
   /* KUNSTNER PÅ GULVET SLUT */
