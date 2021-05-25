@@ -310,9 +310,13 @@
 .KPG--bagrund{
   background-image: url(./assets/baggrundsbillede.png);
 }
+ .KPG--section--header{
+ 
+ } 
   
-  
-  
+.KPG--section--header img{
+width: 100%;
+}
   
   
   
