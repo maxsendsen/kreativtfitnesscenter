@@ -516,31 +516,43 @@ margin: 5%;
 
   /* FOOTER */
 footer{
-
+font-size: 10pt;
+background-color: #fcfcfc;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas: 
+"kontakt aabningstider"
+"ikoner ikoner"
+;
 }
-
+.footer--kontakt--info{
+  margin-left: 5%;
+  text-align: left;
+  grid-area: kontakt;
+  }
+  
+.footer--aabningstider{
+  margin-right: 5%;
+  text-align: right;
+  grid-area: aabningstider;
+  }
 
 footer ul{
-
+  grid-area: ikoner;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.footer--ul--li--FB{
-
+footer ul li{
+  float: left;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 10%;
+  margin-bottom: 10%; 
 }
 
-.footer--ul--li--IG{
 
-}
-
-.footer--ul--li--YT{
-
-}
-
-.footer--kontakt--info{
-
-}
-
-.footer--aabningstider{
-  
-}
   /* FOOTER SLUT */
