@@ -554,5 +554,20 @@ footer ul li{
   margin-bottom: 10%; 
 }
 
+@media (min-width: 860px){
+  footer{
+    font-size: 15pt;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "kontakt aabningstider ikoner"
+    ;
+    }
+  .footer--aabningstider{
+   text-align: left;
+    }
 
+  
+}
   /* FOOTER SLUT */
