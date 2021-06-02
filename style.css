@@ -165,39 +165,22 @@
 
 
 /* FORSIDE START */
-@media (max-width: 800px) {
-  .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-  }
 
-  .toggle-button {
-      display: flex;
-  }
-
-  .navbar-links {
-      display: none;
-      width: 100%;
-  }
-
-  .navbar-links ul {
-      width: 100%;
-      flex-direction: column;
-  }
-
-  .navbar-links ul li {
-      text-align: center;
-  }
-
-  .navbar-links ul li a {
-      padding: .5rem 1rem;
-  }
-
-  .navbar-links.active {
-      display: flex;
-  }
+.ID--section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  
 }
-/* RESPONSIVE NAVIGATINOSBAR SLUT*/
+
 
 /*VIDEO*/
 #myVideo {
@@ -211,7 +194,7 @@ min-height: 100%;
 /*VIDEO SLUT*/
 
 /*LYSERØD BAGGRUND FORAN VIDEO & BAG TEKST*/
-.overlay{
+.ID--overlay{
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -221,12 +204,12 @@ min-height: 100%;
 
 
 /*FYLD TEKST START*/
-.container{
+.ID--container{
 max-width: 650px;
 margin: 60px 100px;
 }
 
-.container .tekst h1{
+.ID--container .ID--tekst h1{
 color: #000000;
 font-size: 65px;
 text-transform: uppercase;
@@ -236,14 +219,14 @@ line-height: 65px;
 margin-bottom: 60px;
 }
 
-.container .tekst h1 span{
+.ID--container .ID--tekst h1 span{
 color: #fff;
 font-size: 50px;
 font-weight: 600;
 
 }
 
-.container .tekst p{
+.ID--container .ID--tekst p{
 font-size: 20px;
 font-weight: 500;
 margin-bottom: 40px;
