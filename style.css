@@ -164,9 +164,175 @@
 
 
 
+/* FORSIDE START */
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+}
+/* RESPONSIVE NAVIGATINOSBAR SLUT*/
+
+/*VIDEO*/
+#myVideo {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+
+}
+/*VIDEO SLUT*/
+
+/*LYSERØD BAGGRUND FORAN VIDEO & BAG TEKST*/
+.overlay{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f7b7b7;
+  opacity: 0.7;
+}
 
 
+/*FYLD TEKST START*/
+.container{
+max-width: 650px;
+margin: 60px 100px;
+}
 
+.container .tekst h1{
+color: #000000;
+font-size: 65px;
+text-transform: uppercase;
+font-weight: 800;
+letter-spacing: 2px;
+line-height: 65px;
+margin-bottom: 60px;
+}
+
+.container .tekst h1 span{
+color: #fff;
+font-size: 50px;
+font-weight: 600;
+
+}
+
+.container .tekst p{
+font-size: 20px;
+font-weight: 500;
+margin-bottom: 40px;
+}
+
+/* FYLD TEKST SLUT*/
+
+/* KNAP START*/
+.ID--container .ID--knap-btn{
+color: #fff;
+background: #ff7979;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: 500;
+letter-spacing: 2px;
+padding: 10px 20px;
+border-radius: 5px;
+transition: 0.3s;
+}
+
+/* HOVER KNAP*/
+.ID--container .ID--knap-btn:hover{
+background: #a2e1db;
+}
+/* KNAP SLUT*/
+
+/* SOME IKONER START*/
+.ID--media-icons{
+display: flex;
+justify-content: left;
+align-items: left;
+margin: 60;
+}
+
+.ID--media-icons a{
+position: relative;
+color: rgb(255, 255, 255);
+font-size: 25px;
+transition: 0.3s;
+transition-property: transform;
+}
+
+.ID--media-icons a:not(:last-child){
+margin-right: 60px;
+}
+
+.ID--media-icons a:hover{
+transform: scale(1.5);
+}
+
+/* SOME IKONER SLUT*/
+
+/*RESPONSIV FYLD TEKST START*/
+
+@media (max-width: 960px){
+
+.ID--container .ID--tekst h1{
+  font-size: 45px;
+  line-height: 50px;
+}
+
+.ID--container .ID--tekst h1 span{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.ID--container .ID--tekst p{
+  font-size: 14px;
+}
+
+}
+
+@media (max-width: 560px){
+.ID--container .ID--tekst h1{
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.ID--container .ID--tekst h1 span{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.ID--container .ID--tekst p{
+  font-size: 14px;
+}
+
+}
+/* FORSIDE SLUT */
 
 
 /* KUNSTNER PÅ GULVET */
