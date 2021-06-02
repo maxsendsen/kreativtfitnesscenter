@@ -698,6 +698,9 @@ margin: 5%;
   background-image: url(./assets/baggrundsbillede.png);
 }
 
+.OMOS--section--header img{
+  width: 100%;
+  }
 .OMOS--container {
   width: 80%;
   display: block;
