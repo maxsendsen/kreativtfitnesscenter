@@ -442,6 +442,9 @@ margin: 5%;
 /* TEGNE OG MALEUNDERVISNING SLUT */
 
 /* KURSUSOVERSIGT START */
+.KO--undervisning-header img{
+  width: 100%;
+  }
 /* INFORMATION START */
 .KO--information{
   background-color: #fcfcfc;
