@@ -167,142 +167,6 @@
 
 
 
-/* FORSIDE */
-.index--section{
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: url(assets/Design\ uden\ navn\ \(2\).png)no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-/* FYLD TEKST START*/
-.container{
-  max-width: 650px;
-  margin: 60px 100px;
-}
-
-.container .tekst h2{
-  color: #1eff00;
-  font-size: 55px;
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 2px;
-  line-height: 60px;
-  margin-bottom: 30px;
-}
-
-.container .tekst h2 span{
-  color: #fff;
-  font-size: 50px;
-  font-weight: 600;
-}
-
-.container .tekst p{
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-
-/* FYLD TEKST SLUT*/
-
-/* KNAP START*/
-.container .knap-btn{
-  color: #fff;
-  background: #70486d;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 2px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-/* HOVER KNAP*/
-.container .knap-btn:hover{
-  background: #e2d666;
-}
-/* KNAP SLUT*/
-
-/* SOME IKONER START*/
-.media-icons{
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  margin: auto;
-}
-
-.media-icons a{
-  position: relative;
-  color: rgb(255, 255, 255);
-  font-size: 25px;
-  transition: 0.3s;
-  transition-property: transform;
-}
-
-.media-icons a:not(:last-child){
-  margin-right: 60px;
-}
-
-.media-icons a:hover{
-  transform: scale(1.5);
-}
-
-/* SOME IKONER SLUT*/
-
-/* MALER BILLEDET START*/
-.responsive {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
-/* MALER BILLEDET SLUT*/
-
-
-/*RESPONSIV FYLD TEKST START*/
-
-@media (max-width: 960px){
-
-  .container .tekst h2{
-    font-size: 45px;
-    line-height: 50px;
-  }
-
-  .container .tekst h2 span{
-    font-size: 40px;
-    font-weight: 600;
-  }
-
-  .container .tekst p{
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 560px){
-  .container .tekst h2{
-    font-size: 35px;
-    line-height: 40px;
-  }
-
-  .container .tekst h2 span{
-    font-size: 30px;
-    font-weight: 600;
-  }
-
-  .container .tekst p{
-    font-size: 14px;
-  }
-}
-
-/*RESPONSIV FYLD TEKST SLUT*/
-/* FORSIDE SLUT */
-
-
-
 
 
 /* KUNSTNER PÅ GULVET */
@@ -513,6 +377,72 @@ margin: 5%;
 
 
   /* KUNSTNER PÅ GULVET SLUT */
+
+/* TEGNE OG MALEUNDERVISNING START */
+
+ /*HEADER RESPONS.*/
+ .TOMU--responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+.TOMU--information{
+  background-color: #fcfcfc;
+  box-shadow: 2px 2px 30px #7c7a7a;
+  margin: 10%;
+  align-items: center;
+  }
+
+
+/* TEGNE */
+.TOMU--row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.TOMU--side {
+  flex: 50%;
+
+  padding: 20px;
+}
+
+/*MALE */ 
+.TOMU--main {
+  flex: 50%;
+  padding: 20px;
+}
+
+
+
+/* KNAP START*/
+.TOMU--button{
+  color: black;
+  background: #55cdcb;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* HOVER KNAP*/
+.TOMU--button:hover{
+  background: #a2e1db;
+}
+/* KNAP SLUT*/
+
+
+
+
+
+
+/* TEGNE OG MALEUNDERVISNING SLUT */
+
+
+  
 
   /* FOOTER */
 footer{
