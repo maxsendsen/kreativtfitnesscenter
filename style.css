@@ -19,9 +19,10 @@
   color: #333;
 }
 
-.brand-title {
+.brand-title a{
   font-size: 1.5rem;
   margin: .5rem;
+  text-decoration: none;
 }
 
 .navbar-links {
