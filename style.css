@@ -541,10 +541,9 @@ margin: 5%;
   /* KUESUSOVERSIGT SLUT */
 
 /* OM OS START */
-/* main {
-  width: 100%;
-  min-height: 100vh;
-} */
+.OMOS--baggrund{
+  background-image: url(./assets/baggrundsbillede.png);
+}
 
 .OMOS--container {
   width: 80%;
