@@ -441,8 +441,96 @@ margin: 5%;
 
 /* TEGNE OG MALEUNDERVISNING SLUT */
 
+/* KURSUSOVERSIGT START */
+/* INFORMATION START */
+.KO--information{
+  background-color: #fcfcfc;
+  box-shadow: 2px 2px 30px #7c7a7a;
+  margin: 10%;
+  }
+    
+  .KO--information p{
+    margin: 0%;
+    font-size: 20pt;
+  }  
 
-  
+  .KO--container{
+    padding: 0 40px;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    display:grid;
+  }
+  .KO--card{
+    height: 280px;
+    max-width: 350px;
+    margin: 50 10px;
+    background: white;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  }
+  .KO--card:hover{
+    height: 470px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  }
+  .KO--card .KO--img{
+    height: 200px;
+    width: 100%;
+  }
+  .KO--card .KO--img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .KO--card .KO--top-text{
+    padding: 5px;
+  }
+  .KO--card .KO--top-text .KO--name{
+    font-size: 25px;
+    font-weight: 600;
+    color: #202020;
+  }
+  .KO--card .KO--top-text p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+  }
+  .KO--card .KO--bottom-text{
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+  }
+  .KO--card:hover .KO--bottom-text{
+    opacity: 1;
+    visibility: visible;
+  }
+  .KO--card .KO--bottom-text .KO--text{
+    text-align: justify;
+  }
+  .KO--card .KO--bottom-text .KO--btn{
+    margin: 10px 0;
+    text-align: left;
+  }
+  .KO--card .KO--bottom-text .KO--btn a{
+    text-decoration: none;
+    background: #e74c3c;
+    color: #f2f2f2;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    transition: 0.2s;
+  }
+  .KO--card .KO--bottom-text .KO--btn a:hover{
+    transform: scale(0.9);
+  }
+
+
+
+  /* KUESUSOVERSIGT SLUT */
 
   /* FOOTER */
 footer{
