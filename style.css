@@ -379,7 +379,9 @@ margin: 5%;
   /* KUNSTNER PÅ GULVET SLUT */
 
 /* TEGNE OG MALEUNDERVISNING START */
-
+.TOMU--baggrund{
+  background-image: url(./assets/baggrundsbillede.png);
+}
  /*HEADER RESPONS.*/
  .TOMU--responsive {
   width: 100%;
@@ -442,6 +444,9 @@ margin: 5%;
 /* TEGNE OG MALEUNDERVISNING SLUT */
 
 /* KURSUSOVERSIGT START */
+.KO--undervisning-baggrund{
+  background-image: url(./assets/baggrundsbillede.png);
+}
 .KO--undervisning-header img{
   width: 100%;
   }
