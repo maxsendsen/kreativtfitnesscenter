@@ -540,6 +540,156 @@ margin: 5%;
 
   /* KUESUSOVERSIGT SLUT */
 
+/* OM OS START */
+/* main {
+  width: 100%;
+  min-height: 100vh;
+} */
+
+.OMOS--container {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.OMOS--main-content {
+  display: flex;
+}
+
+.OMOS--first-row,
+.OMOS--second-row {
+  display: flex;
+}
+
+.OMOS--img1,
+.OMOS--img2 {
+  height: 310px;
+  width: 300px;
+  margin: 0.5em;
+}
+
+.OMOS--images {
+  margin-top: 0.5em;
+  margin-left: 2em;
+}
+
+.OMOS--sub-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #5d5d5d;
+}
+
+.OMOS--information {
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 500px;
+  text-align: justify;
+}
+
+.OMOS--button a {
+  background-color: rgb(255, 255, 255);
+  color: rgb(3, 3, 3);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.OMOS--button {
+  margin-top: 1.5em;
+}
+
+/*KONTAKTINFORMATIONER*/
+.OMOS--row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.OMOS--column {
+  flex: 25%;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .OMOS--column {
+    flex: 50%;
+  }
+
+  .OMOS--first-row, .OMOS--second-row {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .OMOS--row {
+    flex-direction: column;
+  }
+}
+
+.OMOS--open {
+  display: flex;
+}
+
+.OMOS--weekends {
+  margin-left: 5em;
+}
+
+/*KONTAKTFORMULAR*/
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ffccff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: rgb(255, 255, 255);
+  color: rgb(3, 3, 3);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.OMOS--container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/*FIND-US*/
+
+.OMOS--findus-container {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.OMOS--tekst {
+  padding: 1em;
+}
+
+/* OM OS SLUT */
+
+
+
   /* FOOTER */
 footer{
 font-size: 10pt;
