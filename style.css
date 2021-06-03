@@ -697,6 +697,7 @@ margin: 5%;
 /* OM OS START */
 .OMOS--baggrund{
   background-image: url(./assets/baggrundsbillede.png);
+  width: 100%;
 }
 
 .OMOS--section--header img{
