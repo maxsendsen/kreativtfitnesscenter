@@ -705,6 +705,7 @@ margin: 5%;
   }
 .OMOS--content-section{
   background-color: #fcfcfc;
+  box-shadow: 2px 2px 30px #7c7a7a; 
   padding: 2%;
 }
 
