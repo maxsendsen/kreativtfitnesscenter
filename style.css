@@ -1005,6 +1005,204 @@ font-size: 20pt;
 }
 /* EVENTS SLUT */
 
+/* Kreativ børn */
+
+.KB--bagrund {
+  background-image: url(./assets/baggrundsbillede.png);
+}
+
+
+/* header billede og tekst */
+
+.KB--section--header img {
+  width: 100%;
+}
+
+
+/* sektion med info */
+
+.KB--section--info {
+  background-color: #fcfcfc;
+  box-shadow: 2px 2px 30px #7c7a7a;
+  margin: 5%;
+}
+
+.KB--section--info h1 {
+  margin: 5%;
+  padding-top: 5%;
+  font-size: 15pt;
+  color: #333;
+}
+
+.KB--section--info p {
+  margin: 5%;
+  font-size: 10pt;
+}
+
+.KB--section--info img {
+  width: 80%;
+  margin: 9%;
+}
+
+
+/* sektion med kreative børn */
+
+.KB--section--kreativ-born--overskrift {
+  font-size: 20pt;
+  margin-left: 5%;
+  color: #333;
+}
+
+.KB--section--kreativ-born-Kunstner {
+  background-color: #fcfcfc;
+  box-shadow: 2px 2px 30px #7c7a7a;
+  margin: 5%;
+}
+
+.KB--section--kreativ-born-Kunstner img {
+  width: 80%;
+  display: block;
+  padding-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.KB--section--kreativ-born-Kunstner h1 {
+  margin-top: 5%;
+  margin-left: 5%;
+  color: #333;
+}
+
+.KB--section--kreativ-born-Kunstner p {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 5%;
+}
+
+.buy-btn {
+  margin: 1.3em;
+  color: #fff;
+  background: #70486d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: #e2d666;
+}
+
+
+/* sektion med ugeoversigt */
+
+.KB--section--uge--overskrift {
+  font-size: 20pt;
+  color: #333;
+}
+
+.KB--section--uge--dag {
+  background-color: #fcfcfc;
+  box-shadow: 2px 2px 30px #7c7a7a;
+  margin: 5%;
+}
+
+.KB--section--uge--dag h1 {
+  margin: 5%;
+  padding-top: 5%;
+}
+
+.KB--section--uge--dag p {
+  margin: 5%;
+  padding-bottom: 5%;
+}
+
+
+/* responsiv */
+
+@media (min-width: 860px) {
+  /* header billede og tekst */
+  .KB--section--header h1 {
+      top: 40%;
+      font-size: 50pt;
+  }
+  /* sektion med info */
+  .KB--section--info {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "title title aside" "text text aside";
+      background-color: #fcfcfc;
+      margin: 5%;
+  }
+  .KB--section--info h1 {
+      margin-top: 0%;
+      margin-left: 5%;
+      font-size: 30pt;
+      grid-area: title;
+  }
+  .KB--section--info p {
+      margin-left: 5%;
+      font-size: 15pt;
+      grid-area: text;
+  }
+  .KB--section--info img {
+      width: 100%;
+      margin-top: 25%;
+      padding-right: 15%;
+      grid-area: aside;
+  }
+  /* sektion med kunstnere */
+  .KB--section--kreativ-born {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "Heading Heading Heading" "K1 K2 K3" "K4 K5 K0";
+  }
+  .KB--section--kreativ-born--overskrift {
+      grid-area: Heading;
+  }
+  .k1 {
+      grid-area: K1;
+  }
+  .k2 {
+      grid-area: K2;
+  }
+  .k3 {
+      grid-area: K3;
+  }
+  .k4 {
+      grid-area: K4;
+  }
+  .k5 {
+      grid-area: K5;
+  }
+  .KB--section--kreativ-born-Kunstner {
+      margin: 15%;
+      padding-bottom: 1em;
+  }
+  .KB--section--kreativ-born-Kunstner img {
+      width: 60%;
+  }
+  /* sektion med ugeoversigt */
+  .KB--section--uge {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "Heading Heading Heading" "D1 D2 D3" "D4 D5 D6";
+      margin: 3%;
+  }
+  .KB--section--uge--overskrift {
+      grid-area: Heading;
+      margin-left: 2%;
+  }
+}
+
+
+/* KUNSTNER PÅ GULVET SLUT */
 
   /* FOOTER */
 footer{
