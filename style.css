@@ -703,6 +703,11 @@ margin: 5%;
 .OMOS--section--header img{
   width: 100%;
   }
+.OMOS--content-section{
+  background-color: #fcfcfc;
+  padding: 2%;
+}
+
 .OMOS--container {
   width: 80%;
   display: block;
