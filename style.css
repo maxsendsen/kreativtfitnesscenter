@@ -1,0 +1,1526 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* NAVIGATINOSBAR START*/
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcfcfc;
+    color: #333;
+}
+
+.brand-title a {
+    font-size: 1.5rem;
+    margin: .5rem;
+    text-decoration: none;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+
+/* The dropdown container */
+
+.Nav-dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+/* Dropdown button */
+
+.Nav-dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #333;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+
+/* Add a red background color to navbar links on hover */
+
+.navbar a:hover,
+.Nav-dropdown:hover .dropbtn {
+    background-color: #FCB9AA;
+    color: #333;
+}
+
+
+/* Dropdown content (hidden by default) */
+
+.Nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.Nav-dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* Add a grey background color to dropdown links on hover */
+
+.Nav-dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.Nav-dropdown:hover .Nav-dropdown-content {
+    display: block;
+}
+
+
+/* NAVIGATINOSBAR SLUT*/
+
+
+/* RESPONSIVE NAVIGATINOSBAR START*/
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li {
+        text-align: center;
+    }
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+/* RESPONSIVE NAVIGATINOSBAR SLUT*/
+
+
+/* FORSIDE START */
+
+.ID--section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/*VIDEO*/
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/*VIDEO SLUT*/
+
+
+/*LYSERØD BAGGRUND FORAN VIDEO & BAG TEKST*/
+
+.ID--overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f7b7b7;
+    opacity: 0.7;
+}
+
+
+/*FYLD TEKST START*/
+
+.ID--container {
+    max-width: 650px;
+    margin: 60px 100px;
+}
+
+.ID--container .ID--tekst h1 {
+    color: #000000;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 65px;
+    margin-bottom: 60px;
+}
+
+.ID--container .ID--tekst h1 span {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.ID--container .ID--tekst p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+
+/* FYLD TEKST SLUT*/
+
+
+/* KNAP START*/
+
+.ID--container .ID--knap-btn {
+    color: #fff;
+    background: #ff7979;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+/* HOVER KNAP*/
+
+.ID--container .ID--knap-btn:hover {
+    background: #a2e1db;
+}
+
+
+/* KNAP SLUT*/
+
+
+/* SOME IKONER START*/
+
+.ID--media-icons {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 60;
+}
+
+.ID--media-icons a {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+}
+
+.ID--media-icons a:not(:last-child) {
+    margin-right: 60px;
+}
+
+.ID--media-icons a:hover {
+    transform: scale(1.5);
+}
+
+
+/* SOME IKONER SLUT*/
+
+
+/*RESPONSIV FYLD TEKST START*/
+
+@media (max-width: 960px) {
+    .ID--container .ID--tekst h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .ID--container .ID--tekst h1 span {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .ID--container .ID--tekst p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 560px) {
+    .ID--container .ID--tekst h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .ID--container .ID--tekst h1 span {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .ID--container .ID--tekst p {
+        font-size: 14px;
+    }
+}
+
+
+/* FORSIDE SLUT */
+
+
+/* KUNSTNER PÅ GULVET */
+
+.KPG--bagrund {
+    background-image: url(./assets/baggrundsbillede.png);
+}
+
+
+/* header billede og tekst */
+
+.KPG--section--header img {
+    width: 100%;
+}
+
+
+/* sektion med info */
+
+.KPG--section--info {
+    background-color: #fcfcfc;
+    box-shadow: 2px 2px 30px #7c7a7a;
+    margin: 5%;
+}
+
+.KPG--section--info h1 {
+    margin: 5%;
+    padding-top: 5%;
+    font-size: 15pt;
+    color: #333;
+}
+
+.KPG--section--info p {
+    margin: 5%;
+    font-size: 10pt;
+}
+
+.KPG--section--info img {
+    width: 80%;
+    margin: 9%;
+}
+
+
+/* sektion med kunstnere */
+
+.KPG--section--vores-kunstnere--overskrift {
+    font-size: 20pt;
+    margin-left: 5%;
+    color: #333;
+}
+
+.KPG--section--vores-kunstnere-Kunstner {
+    background-color: #fcfcfc;
+    box-shadow: 2px 2px 30px #7c7a7a;
+    margin: 5%;
+}
+
+.KPG--section--vores-kunstnere-Kunstner img {
+    width: 80%;
+    display: block;
+    padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.KPG--section--vores-kunstnere-Kunstner h1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    color: #333;
+}
+
+.KPG--section--vores-kunstnere-Kunstner p {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+}
+
+
+/* sektion med ugeoversigt */
+
+.KPG--section--uge--overskrift {
+    font-size: 20pt;
+    color: #333;
+}
+
+.KPG--section--uge--dag {
+    background-color: #fcfcfc;
+    box-shadow: 2px 2px 30px #7c7a7a;
+    margin: 5%;
+}
+
+.KPG--section--uge--dag h1 {
+    margin: 5%;
+    padding-top: 5%;
+}
+
+.KPG--section--uge--dag p {
+    margin: 5%;
+    padding-bottom: 5%;
+}
+
+
+/* responsiv */
+
+@media (min-width: 860px) {
+    /* header billede og tekst */
+    .KPG--section--header h1 {
+        top: 40%;
+        font-size: 50pt;
+    }
+    /* sektion med info */
+    .KPG--section--info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "title title aside" "text text aside";
+        background-color: #fcfcfc;
+        margin: 5%;
+    }
+    .KPG--section--info h1 {
+        margin-top: 0%;
+        margin-left: 5%;
+        font-size: 30pt;
+        grid-area: title;
+    }
+    .KPG--section--info p {
+        margin-left: 5%;
+        font-size: 15pt;
+        grid-area: text;
+    }
+    .KPG--section--info img {
+        width: 100%;
+        margin-top: 25%;
+        padding-right: 15%;
+        grid-area: aside;
+    }
+    /* sektion med kunstnere */
+    .KPG--section--vores-kunstnere {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "Heading Heading Heading" "K1 K2 K3" "K4 K5 K0";
+    }
+    .KPG--section--vores-kunstnere--overskrift {
+        grid-area: Heading;
+    }
+    .k1 {
+        grid-area: K1;
+    }
+    .k2 {
+        grid-area: K2;
+    }
+    .k3 {
+        grid-area: K3;
+    }
+    .k4 {
+        grid-area: K4;
+    }
+    .k5 {
+        grid-area: K5;
+    }
+    .KPG--section--vores-kunstnere-Kunstner {
+        margin: 15%;
+    }
+    .KPG--section--vores-kunstnere-Kunstner img {
+        width: 60%;
+    }
+    /* sektion med ugeoversigt */
+    .KPG--section--uge {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "Heading Heading Heading" "D1 D2 D3" "D4 D5 D6";
+        margin: 3%;
+    }
+    .KPG--section--uge--overskrift {
+        grid-area: Heading;
+        margin-left: 2%;
+    }
+}
+
+
+/* KUNSTNER PÅ GULVET SLUT */
+
+
+/* TEGNE OG MALEUNDERVISNING START */
+
+.TOMU--baggrund {
+    background-image: url(./assets/baggrundsbillede.png);
+}
+
+
+/*HEADER RESPONS.*/
+
+.TOMU--responsive {
+    width: 100%;
+    height: auto;
+}
+
+.TOMU--information {
+    background-color: #fcfcfc;
+    box-shadow: 2px 2px 30px #7c7a7a;
+    margin: 10%;
+    padding: 5%;
+    align-items: center;
+}
+
+
+/* TEGNE */
+
+.TOMU--row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TOMU--side {
+    flex: 50%;
+    padding: 20px;
+}
+
+
+/*MALE */
+
+.TOMU--main {
+    flex: 50%;
+    padding: 20px;
+}
+
+
+/* KNAP START*/
+
+.TOMU--button {
+    color: black;
+    background: #55cdcb;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: 0;
+    margin-top: 2%;
+}
+
+
+/* HOVER KNAP*/
+
+.TOMU--button:hover {
+    background: #a2e1db;
+}
+
+
+/* KNAP SLUT*/
+
+
+/* TEGNE OG MALEUNDERVISNING SLUT */
+
+
+/* KURSUSOVERSIGT START */
+
+.KO--undervisning-baggrund {
+    background-image: url(./assets/baggrundsbillede.png);
+}
+
+.KO--undervisning-header img {
+    width: 100%;
+}
+
+
+/* INFORMATION START */
+
+.KO--information {
+    background-color: #fcfcfc;
+    box-shadow: 2px 2px 30px #7c7a7a;
+    margin: 10%;
+}
+
+.KO--information p {
+    margin: 0%;
+    font-size: 20pt;
+}
+
+.KO--container {
+    padding: 0 40px;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    display: grid;
+}
+
+.KO--card {
+    height: 280px;
+    max-width: 350px;
+    margin: 50 10px;
+    background: white;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.KO--card:hover {
+    height: 470px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.KO--card .KO--img {
+    height: 200px;
+    width: 100%;
+}
+
+.KO--card .KO--img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.KO--card .KO--top-text {
+    padding: 5px;
+}
+
+.KO--card .KO--top-text .KO--name {
+    font-size: 25px;
+    font-weight: 600;
+    color: #202020;
+}
+
+.KO--card .KO--top-text p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+}
+
+.KO--card .KO--bottom-text {
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.KO--card:hover .KO--bottom-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.KO--card .KO--bottom-text .KO--text {
+    text-align: justify;
+}
+
+.KO--card .KO--bottom-text .KO--btn {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.KO--card .KO--bottom-text .KO--btn a {
+    text-decoration: none;
+    background: #e74c3c;
+    color: #f2f2f2;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    transition: 0.2s;
+}
+
+.KO--card .KO--bottom-text .KO--btn a:hover {
+    transform: scale(0.9);
+}
+
+
+/* KUESUSOVERSIGT SLUT */
+
+
+/* OM OS START */
+
+.OMOS--baggrund {
+    background-image: url(./assets/baggrundsbillede.png);
+}
+
+.OMOS--section--header img {
+    width: 100%;
+}
+
+.OMOS--container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.OMOS--main-content {
+    display: flex;
+}
+
+.OMOS--first-row,
+.OMOS--second-row {
+    display: flex;
+}
+
+.OMOS--img1,
+.OMOS--img2 {
+    height: 310px;
+    width: 300px;
+    margin: 0.5em;
+}
+
+.OMOS--images {
+    margin-top: 0.5em;
+    margin-left: 2em;
+}
+
+.OMOS--sub-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #5d5d5d;
+}
+
+.OMOS--information {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.OMOS--button a {
+    background-color: #55cdcb;
+    color: #030303;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.OMOS--button {
+    margin-top: 1.5em;
+    background-color: #55cdcb;
+}
+
+
+/*KONTAKTINFORMATIONER*/
+
+.OMOS--row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.OMOS--column {
+    flex: 25%;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 992px) {
+    .OMOS--column {
+        flex: 50%;
+    }
+    .OMOS--first-row,
+    .OMOS--second-row {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .OMOS--row {
+        flex-direction: column;
+    }
+}
+
+.OMOS--open {
+    display: flex;
+}
+
+.OMOS--weekends {
+    margin-left: 5em;
+}
+
+
+/*KONTAKTFORMULAR*/
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffccff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #55cdcb;
+    color: #030303;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.OMOS--container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+/*FIND-US*/
+
+.OMOS--findus-container {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.OMOS--tekst {
+    padding: 1em;
+}
+
+
+/* OM OS SLUT */
+
+
+/* EVENTS START */
+
+.EV--undervisning-baggrund {
+    background-image: url(./assets/baggrundsbillede.png);
+}
+
+
+/*HEADER */
+
+.EV--undervisning-header img {
+    width: 100%;
+}
+
+
+/* INFORMATION START */
+
+.EV--information {
+    background-color: #fcfcfc;
+    box-shadow: 2px 2px 30px #7c7a7a;
+    margin: 10%;
+}
+
+.EV--information h1 {
+    margin: 0%;
+    font-size: 20pt;
+}
+
+.EV--information p {
+    margin: 0%;
+    font-size: 16pt;
+}
+
+
+/*EVENTS*/
+
+::selection {
+    color: #fff;
+    background: #ff7979;
+}
+
+.EV--wrapper {
+    max-width: 1080px;
+    margin: 50px auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.EV--wrapper .EV--center-line {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #fff;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+.EV--wrapper .EV--row {
+    display: flex;
+}
+
+.EV--wrapper .EV--row-1 {
+    justify-content: flex-start;
+}
+
+.EV--wrapper .EV--row-2 {
+    justify-content: flex-end;
+}
+
+.EV--wrapper .EV--row section {
+    background: #fff;
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+}
+
+.EV--wrapper .EV--row section::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    top: 28px;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+.EV--row-1 section::before {
+    right: -7px;
+}
+
+.EV--row-2 section::before {
+    left: -7px;
+}
+
+.EV--row section .EV--icon,
+.EV--center-line .EV--scroll-icon {
+    position: absolute;
+    background: #f2f2f2;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ff7979;
+    font-size: 17px;
+    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.EV--center-line .EV--scroll-icon {
+    bottom: 0px;
+    left: 50%;
+    font-size: 25px;
+    transform: translateX(-50%);
+}
+
+.EV--row-1 section .EV--icon {
+    top: 15px;
+    right: -60px;
+}
+
+.EV--row-2 section .EV--icon {
+    top: 15px;
+    left: -60px;
+}
+
+.EV--row section .EV--details,
+.EV--row section .EV--bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row section .details .title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.EV--row section p {
+    margin: 10px 0 17px 0;
+}
+
+.EV--row section .EV--bottom a {
+    text-decoration: none;
+    background: #ff7979;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.EV--row section .EV--bottom a:hover {
+    transform: scale(0.97);
+}
+
+@media(max-width: 790px) {
+    .EV--wrapper .EV--center-line {
+        left: 40px;
+    }
+    .EV--wrapper .EV--row {
+        margin: 30px 0 3px 60px;
+    }
+    .EV--wrapper .EV--row section {
+        width: 100%;
+    }
+    .EV--row-1 section::before {
+        left: -7px;
+    }
+    .EV--row-1 section .EV--icon {
+        left: -60px;
+    }
+}
+
+@media(max-width: 440px) {
+    .EV--wrapper .EV--center-line,
+    .EV--row section::before,
+    .EV--row section .EV--icon {
+        display: none;
+    }
+    .EV--wrapper .EV--row {
+        margin: 10px 0;
+    }
+}
+
+
+/* EVENTS SLUT */
+
+
+/* FOOTER */
+
+footer {
+    font-size: 10pt;
+    background-color: #fcfcfc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "kontakt aabningstider" "ikoner ikoner";
+}
+
+.footer--kontakt--info {
+    margin-left: 5%;
+    text-align: left;
+    grid-area: kontakt;
+}
+
+.footer--aabningstider {
+    margin-right: 5%;
+    text-align: right;
+    grid-area: aabningstider;
+}
+
+footer ul {
+    grid-area: ikoner;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer ul li {
+    float: left;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+@media (min-width: 860px) {
+    footer {
+        font-size: 15pt;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "kontakt aabningstider ikoner";
+    }
+    .footer--aabningstider {
+        text-align: left;
+    }
+}
+
+
+/* FOOTER SLUT */
+
+
+/* FORSIDE */
+
+.index--section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(assets/Design\ uden\ navn\ \(2\).png)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* FYLD TEKST START*/
+
+.container {
+    max-width: 650px;
+    margin: 60px 100px;
+}
+
+.container .tekst h2 {
+    color: #1eff00;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.container .tekst h2 span {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.container .tekst p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+
+/* FYLD TEKST SLUT*/
+
+
+/* KNAP START*/
+
+.container .knap-btn {
+    color: #fff;
+    background: #70486d;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+/* HOVER KNAP*/
+
+.container .knap-btn:hover {
+    background: #e2d666;
+}
+
+
+/* KNAP SLUT*/
+
+
+/* SOME IKONER START*/
+
+.media-icons {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: auto;
+}
+
+.media-icons a {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+}
+
+.media-icons a:not(:last-child) {
+    margin-right: 60px;
+}
+
+.media-icons a:hover {
+    transform: scale(1.5);
+}
+
+
+/* SOME IKONER SLUT*/
+
+
+/* MALER BILLEDET START*/
+
+.responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+
+/* MALER BILLEDET SLUT*/
+
+
+/*RESPONSIV FYLD TEKST START*/
+
+@media (max-width: 960px) {
+    .container .tekst h2 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .container .tekst h2 span {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .container .tekst p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 560px) {
+    .container .tekst h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .KB--section--kreativ-born-Kunstner {
+        margin: 15%;
+        padding-bottom: 2em;
+    }
+    .container .tekst h2 span {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .container .tekst p {
+        font-size: 14px;
+    }
+}
+
+
+/*RESPONSIV FYLD TEKST SLUT*/
+
+
+/* FORSIDE SLUT */
+
+
+/* Kreativ børn */
+
+.KB--bagrund {
+    background-image: url(./assets/baggrundsbillede.png);
+}
+
+
+/* header billede og tekst */
+
+.KB--section--header img {
+    width: 100%;
+}
+
+
+/* sektion med info */
+
+.KB--section--info {
+    background-color: #fcfcfc;
+    box-shadow: 2px 2px 30px #7c7a7a;
+    margin: 5%;
+}
+
+.KB--section--info h1 {
+    margin: 5%;
+    padding-top: 5%;
+    font-size: 15pt;
+    color: #333;
+}
+
+.KB--section--info p {
+    margin: 5%;
+    font-size: 10pt;
+}
+
+.KB--section--info img {
+    width: 80%;
+    margin: 9%;
+}
+
+
+/* sektion med kreative børn */
+
+.KB--section--kreativ-born--overskrift {
+    font-size: 20pt;
+    margin-left: 5%;
+    color: #333;
+}
+
+.KB--section--kreativ-born-Kunstner {
+    background-color: #fcfcfc;
+    box-shadow: 2px 2px 30px #7c7a7a;
+    margin: 5%;
+}
+
+.KB--section--kreativ-born-Kunstner img {
+    width: 80%;
+    display: block;
+    padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.KB--section--kreativ-born-Kunstner h1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    color: #333;
+}
+
+.KB--section--kreativ-born-Kunstner p {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+}
+
+.buy-btn {
+    margin: 1.3em;
+    color: #fff;
+    background: #70486d;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: #e2d666;
+}
+
+
+/* sektion med ugeoversigt */
+
+.KB--section--uge--overskrift {
+    font-size: 20pt;
+    color: #333;
+}
+
+.KB--section--uge--dag {
+    background-color: #fcfcfc;
+    box-shadow: 2px 2px 30px #7c7a7a;
+    margin: 5%;
+}
+
+.KB--section--uge--dag h1 {
+    margin: 5%;
+    padding-top: 5%;
+}
+
+.KB--section--uge--dag p {
+    margin: 5%;
+    padding-bottom: 5%;
+}
+
+
+/* responsiv */
+
+@media (min-width: 860px) {
+    /* header billede og tekst */
+    .KB--section--header h1 {
+        top: 40%;
+        font-size: 50pt;
+    }
+    /* sektion med info */
+    .KB--section--info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "title title aside" "text text aside";
+        background-color: #fcfcfc;
+        margin: 5%;
+    }
+    .KB--section--info h1 {
+        margin-top: 0%;
+        margin-left: 5%;
+        font-size: 30pt;
+        grid-area: title;
+    }
+    .KB--section--info p {
+        margin-left: 5%;
+        font-size: 15pt;
+        grid-area: text;
+    }
+    .KB--section--info img {
+        width: 100%;
+        margin-top: 25%;
+        padding-right: 15%;
+        grid-area: aside;
+    }
+    /* sektion med kunstnere */
+    .KB--section--kreativ-born {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "Heading Heading Heading" "K1 K2 K3" "K4 K5 K0";
+    }
+    .KB--section--kreativ-born--overskrift {
+        grid-area: Heading;
+    }
+    .k1 {
+        grid-area: K1;
+    }
+    .k2 {
+        grid-area: K2;
+    }
+    .k3 {
+        grid-area: K3;
+    }
+    .k4 {
+        grid-area: K4;
+    }
+    .k5 {
+        grid-area: K5;
+    }
+    .KB--section--kreativ-born-Kunstner {
+        margin: 15%;
+        padding-bottom: 1em;
+    }
+    .KB--section--kreativ-born-Kunstner img {
+        width: 60%;
+    }
+    /* sektion med ugeoversigt */
+    .KB--section--uge {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "Heading Heading Heading" "D1 D2 D3" "D4 D5 D6";
+        margin: 3%;
+    }
+    .KB--section--uge--overskrift {
+        grid-area: Heading;
+        margin-left: 2%;
+    }
+}
+
+
+/* KUNSTNER PÅ GULVET SLUT */
+
+
+/* FOOTER */
+
+footer {
+    font-size: 10pt;
+    background-color: #fcfcfc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "kontakt aabningstider" "ikoner ikoner";
+}
+
+.footer--kontakt--info {
+    margin-left: 5%;
+    text-align: left;
+    grid-area: kontakt;
+}
+
+.footer--aabningstider {
+    margin-right: 5%;
+    text-align: right;
+    grid-area: aabningstider;
+}
+
+footer ul {
+    grid-area: ikoner;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer ul li {
+    float: left;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+@media (min-width: 860px) {
+    footer {
+        font-size: 15pt;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "kontakt aabningstider ikoner";
+    }
+    .footer--aabningstider {
+        text-align: left;
+    }
+}
+
+
+/* FOOTER SLUT */
